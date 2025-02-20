@@ -32,5 +32,14 @@
 
 .codeBlock code {
   font-family: "Courier New", Courier, monospace;
+  font-size: 1.3rem;
 }
 
+.link {
+  color: #92400e;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #b45309;
+}

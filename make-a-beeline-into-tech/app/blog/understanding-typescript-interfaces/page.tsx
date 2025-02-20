@@ -3,7 +3,7 @@ import styles from "./page.module.css"
 
 export const metadata: Metadata = {
   title: "Understanding TypeScript Interfaces",
-  description: "Learn how to use TypeScript interfaces to define object shapes and improve your code.",
+  description: "Learn how to use TypeScript interfaces to build a simple web page",
 }
 
 export default function TypeScriptInterfacesPost() {
@@ -13,6 +13,18 @@ export default function TypeScriptInterfacesPost() {
       <p className={styles.lead}>
         In the world of TypeScript, interfaces are like the intricate patterns found in a beehive. They define the
         structure of objects, much like how the hexagonal cells define the structure of a honeycomb.
+      </p>
+      <h2 className={styles.heading}>Materials for this workshop</h2>
+      <p>
+        If you want, you can get hands on with the workshop using a public GitHub repo. Please FORK the repo first before cloning it down locally. You can access it {""} 
+        <a
+            href="https://github.com/Maddy-bee/beeline-interface-workshop"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            here.
+          </a>
       </p>
       <h2 className={styles.heading}>What are TypeScript Interfaces?</h2>
       <p>
@@ -77,12 +89,65 @@ const queenBee: Bee = {
         In this example, the Bee interface extends the Insect interface, adding more specific properties while
         inheriting the common ones.
       </p>
+      <h2 className={styles.heading}>Readonly properties</h2>
+      <p>What if you do not want your property to be modified after the value has been initilised? You can define it with 'readonly'.  :</p>
+      <pre className={styles.codeBlock}>
+        <code>
+          {`interface Bee {
+  readonly species: string
+  description: string
+  pollinationEfficiency: number
+}`}
+        </code>
+      </pre>
+      <p>
+        In this example, the species has been defined as a readonly property. 
+      </p>
+      <h2 className={styles.heading}>Optional properties</h2>
+      <p>Now, you want to list whether your bee is an endangered species, but only under certain circumstances. You can define an optional property using '?'.</p>
+      <pre className={styles.codeBlock}>
+        <code>
+          {`interface Bee {
+  readonly species: string
+  description: string
+  pollinationEfficiency: number
+  endangeredStatus?: string
+}`}
+        </code>
+      </pre>
+      <p>
+        In this example, the endagneredstatus property has been defined as optional. Here are the related objects:
+      </p>
+      <pre className={styles.codeBlock}>
+        <code>
+          {`const bees: Bee[] = [
+  {
+    species: "Honey Bee",
+    description: "The most common bee in British gardens",
+    pollinationEfficiency: 0.8,
+  },
+  {
+    species: "Bumblebee",
+    description: "Large, fuzzy bees with a distinctive buzz",
+    pollinationEfficiency: 0.9,
+    endangeredStatus: "Vulnerable",
+  },
+  {
+    species: "Mason Bee",
+    description: "Solitary bees that nest in hollow stems",
+    pollinationEfficiency: 0.95,
+  },
+]`}
+        </code>
+      </pre>
       <h2 className={styles.heading}>Conclusion</h2>
       <p>
         TypeScript interfaces are a fundamental tool for creating robust and maintainable code. They help catch errors
         early and make your code more self-documenting. Just as bees work together to maintain the structure of their
         hive, interfaces help maintain the structure and integrity of your TypeScript code ecosystem.
       </p>
+      
+
     </article>
   )
 }
