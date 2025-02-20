@@ -1,0 +1,36 @@
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #92400e;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #713f12;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 1.75rem;
+  color: #92400e;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.codeBlock {
+  background-color: #fef3c7;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.codeBlock code {
+  font-family: "Courier New", Courier, monospace;
+}
+
