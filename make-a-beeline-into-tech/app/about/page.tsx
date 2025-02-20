@@ -1,5 +1,6 @@
-import type { Metadata } from "next"
-import styles from "./page.module.css"
+import type { Metadata } from "next";
+import styles from "./page.module.css";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About - Make a Beeline into Tech",
@@ -33,8 +34,9 @@ export default function About() {
           >
             LinkedIn
           </a>
-          .
+          
         </p>
+        <Image src="/images/image.png" alt="Image of Maddy" className={styles.image} width={200} height={230}/>
       </section>
     </div>
   )
