@@ -91,7 +91,7 @@ const queenBee: Bee = {
         inheriting the common ones.
       </p>
       <h2 className={styles.heading}>Readonly properties</h2>
-      <p>What if you do not want your property to be modified after the value has been initilised? You can define it with 'readonly'.  :</p>
+      <p>What if you do not want your property to be modified after its initial assignment? You can mark it as readonly. </p>
       <pre className={styles.codeBlock}>
         <code>
           {`interface Bee {
@@ -105,7 +105,7 @@ const queenBee: Bee = {
         In this example, the species has been defined as a readonly property. 
       </p>
       <h2 className={styles.heading}>Optional properties</h2>
-      <p>Now, you want to list whether your bee is an endangered species, but only under certain circumstances. You can define an optional property using '?'.</p>
+      <p>Now you want to list whether your bee is an endangered species, but only under specific circumstances. You can define an optional property using '?'.</p>
       <pre className={styles.codeBlock}>
         <code>
           {`interface Bee {
@@ -154,7 +154,7 @@ const queenBee: Bee = {
         </code>
       </pre>
       <p>
-         The duckBee object is not explicity typed as Bee. However, it contains all of the properties expected, so it will be treated as the same in TypeScript. 
+         The duckBee object is not explicity typed as Bee. However, it contains all of the properties expected, so it will be treated the same as the Bee interface in TypeScript. 
       </p>
       <h2 className={styles.heading}>Your Turn</h2>
       <p>Try and apply the knowledge from this introduction by populating interfaces in this repository. You can also see an application of Duck typing as well. Scroll down on this page to find the answers.</p>
