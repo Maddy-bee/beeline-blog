@@ -117,7 +117,7 @@ const queenBee: Bee = {
         </code>
       </pre>
       <p>
-        In this example, the endagneredstatus property has been defined as optional. Here are the related objects:
+        In this example, the endangeredstatus property has been defined as optional. Here are the related objects:
       </p>
       <pre className={styles.codeBlock}>
         <code>
