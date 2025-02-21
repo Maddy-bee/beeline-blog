@@ -17,7 +17,7 @@ export default function About() {
         <p>
           This blog is designed for beginners who are just starting out on their coding journey. Each post will take you
           through a tutorial using hands-on practical tasks to build your knowledge. At the end of each workshop, you'll
-          have a GitHub repository that demonstrates the skill you have just learned.
+          have a GitHub repository that demonstrates the knowledge you have just learned.
         </p>
       </section>
 
@@ -25,7 +25,7 @@ export default function About() {
         <h2 className={styles.sectionTitle}>About Me</h2>
         <p>
           I'm Maddy, a junior developer hoping to use tech for good and to contribute positively to the tech community.
-          You can find me on{" "}
+          If you would like to get in touch, you can find me on{" "}
           <a
             href="https://www.linkedin.com/in/madeleine-walsh-81737498/"
             target="_blank"

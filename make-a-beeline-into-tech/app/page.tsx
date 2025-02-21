@@ -12,9 +12,9 @@ interface Post {
 const posts: Post[] = [
   {
     id: 1,
-    title: "Understanding TypeScript Interfaces",
+    title: "Introduction to TypeScript Interfaces",
     excerpt: "Learn how to use TypeScript interfaces to define object shapes and improve your code.",
-    date: "2025-05-15",
+    date: "21-02-2025",
     slug: "understanding-typescript-interfaces",
   },
   // Add more blog posts here
