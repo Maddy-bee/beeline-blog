@@ -31,8 +31,9 @@
 }
 
 .codeBlock code {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "input";
   font-size: 1.3rem;
+  
 }
 
 .link {
@@ -42,4 +43,9 @@
 
 .link:hover {
   color: #b45309;
+}
+
+.image{
+  display: block;
+  margin: 1rem auto;
 }
