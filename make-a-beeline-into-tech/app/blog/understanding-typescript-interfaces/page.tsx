@@ -157,7 +157,7 @@ const queenBee: Bee = {
          The duckBee object is not explicity typed as Bee. However, it contains all of the properties expected, so it will be treated the same as the Bee interface in TypeScript. 
       </p>
       <h2 className={styles.heading}>Your Turn</h2>
-      <p>Try and apply the knowledge from this introduction by populating interfaces in this repository. You can also see an application of Duck typing as well. Scroll down on this page to find the answers.</p>
+      <p>Try and apply the knowledge from this introduction by populating interfaces in the linked repository. You can also see an application of Duck typing as well. Scroll down on this page to find the answers.</p>
       <h2 className={styles.heading}>Conclusion</h2>
       <p>
         TypeScript interfaces are a fundamental tool for creating robust and maintainable code. They help catch errors
